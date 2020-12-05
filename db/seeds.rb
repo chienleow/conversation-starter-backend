@@ -9,3 +9,4 @@
 rachel = User.create(username: "Rachel")
 monica = User.create(username: "Monica")
 phoebe = User.create(username: "Phoebe")
+
