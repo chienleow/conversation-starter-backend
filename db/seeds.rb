@@ -10,3 +10,5 @@ rachel = User.create(username: "Rachel")
 monica = User.create(username: "Monica")
 phoebe = User.create(username: "Phoebe")
 
+question1 = Question.create(question: "Would you like to be famous? In what way?", user_id: rachel.id)
+
