@@ -11,4 +11,6 @@ monica = User.create(username: "Monica")
 phoebe = User.create(username: "Phoebe")
 
 question1 = Question.create(question: "Would you like to be famous? In what way?", user_id: rachel.id)
+question2 = Question.create(question: "Would you rather have a dog with a cat’s personality or a cat with a dog’s personality?", user_id: monica.id)
+question3 = Question.create(question: "What will finally break the internet?", user_id: phoebe.id)
 
