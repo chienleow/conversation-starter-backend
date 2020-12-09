@@ -14,3 +14,9 @@ question1 = Question.create(question: "Would you like to be famous? In what way?
 question2 = Question.create(question: "Would you rather have a dog with a cat’s personality or a cat with a dog’s personality?", user_id: monica.id)
 question3 = Question.create(question: "What will finally break the internet?", user_id: phoebe.id)
 
+# question4 = Question.create(question: "What will finally break the internet?", user_id: donut.id)
+# question5 = Question.create(question: "What will finally break the internet?", user_id: donut.id)
+# question6 = Question.create(question: "What will finally break the internet?", user_id: donut.id)
+
+# username: donut, question: A
+

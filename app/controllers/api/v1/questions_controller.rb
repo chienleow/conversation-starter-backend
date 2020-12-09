@@ -5,6 +5,7 @@ class Api::V1::QuestionsController < ApplicationController
     end
 
     def create
+        # byebug
         question = Question.new(question_params)
         if question.save
             render json: question, status: :accepted
@@ -16,6 +17,7 @@ class Api::V1::QuestionsController < ApplicationController
     private
     
     def question_params
+        ## update params to accept user attribute
         require(:question).permit(:question, :user_id)
     end
 end
