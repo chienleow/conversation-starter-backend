@@ -18,6 +18,6 @@ class Api::V1::QuestionsController < ApplicationController
     
     def question_params
         ## update params to accept user attribute
-        require(:question).permit(:question, :user_id)
+        params.require(:question).permit(:question, :user_id)
     end
 end
