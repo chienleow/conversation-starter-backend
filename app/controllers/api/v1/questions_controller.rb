@@ -10,7 +10,7 @@ class Api::V1::QuestionsController < ApplicationController
         if question.save
             render json: question, status: :accepted
         else
-            render json: { errors: question.errors.full_messages }, status: :unprocessible_entity
+            render json: { errors: question.errors.full_messages }, status: :unprocessable_entity
         end
     end
 
