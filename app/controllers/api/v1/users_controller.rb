@@ -1,12 +1,11 @@
 class Api::V1::UsersController < ApplicationController
 
     def create
-        @user = User.create(user_params)
-        if @user.valid?
-            @token = encode_token(user_id: @user.id)
-            render json: { user: UserSerializer.new(@user), jwt: @token }, status: :created
+        @user = User.new(user_params)
+        if @user.save
+            render json: @user, status: :accepted
         else
-            render json: { error: 'Failed to create user, try again.' }, status: :not_acceptable
+            render json: { errors: @user.errors.full_messages }, status: :unprocessable_entity
         end
     end
 

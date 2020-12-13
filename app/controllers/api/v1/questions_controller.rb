@@ -5,7 +5,6 @@ class Api::V1::QuestionsController < ApplicationController
     end
 
     def create
-        # byebug
         question = Question.new(question_params)
         if question.save
             render json: question, status: :accepted
