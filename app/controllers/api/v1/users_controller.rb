@@ -13,8 +13,6 @@ class Api::V1::UsersController < ApplicationController
     private
 
     def user_params
-        params.require(:user).permit(
-            :username,
-            questions_attributes: [:question])
+        params.require(:user).permit(:username)
     end
 end
